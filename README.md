@@ -3,7 +3,7 @@ El bot para meterse con la gente por excelencia. Un intento de mejora de https:/
 
 Necesario renombrar `_config.py` a `config.py` y añadir un token proporcionado por BotFather
 
-Funcionamiento:
+##Funcionamiento:
 ```
 python3 bot.py
 ```
