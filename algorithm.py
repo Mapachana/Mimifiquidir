@@ -3,7 +3,7 @@
 @author Jose 
 @brief implementación del algoritmo del mimifiquidir, 
 Mimificar una cadena de caracteres consiste en cambiar de manera conveniente las vocales y ciertas consonantes por ies, dándole un toquecillo sarcástico y desenfadado al mensaje con el fin de chincar al usuario al queu se le responde. 
-con una eficiencia O(n^2) muy muy mejorable, seguro que de manera recursiva se mejora :D
+con una eficiencia O(n^2).
 """
 silabas_especiales =    (
                         (('que', 'qui', 'ca', 'co', 'cu'), '$1$',  'qui'),
@@ -29,8 +29,9 @@ silabas_especiales =    (
 vocales = (('aeou', 'i'), ('áéóú', 'í'), ('AEOU', 'I'), ('ÁÉÓÚ', 'Í'))
 
 def mimifica(mensaje: str):
-    """
-Codificación de sílabas especiales:"""
+    '''Devuelve mensaje mimificado'''
+    
+    # Codificación de sílabas especiales:
     for grupo in silabas_especiales:
         for silaba in grupo[0]:
             mensaje = mensaje.replace(silaba, grupo[1])
