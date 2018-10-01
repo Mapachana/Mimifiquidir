@@ -1,10 +1,17 @@
+"""
+@file bot.py
+@author Jose
+@brief cuerpo del bot, desde aquí se llama a la función clase algorith que es al que "mimifica"
+"""
 from algorithm import mimifica
 from config import TOKEN
 
 from telegram.ext import Updater, CommandHandler
 
-# Función que reenvía un mensaje mimificado (utiliza la función mimifica):
+
 def mimi(bot, update):
+    """ Función que reenvía un mensaje mimificado (utiliza la función mimifica):
+"""
     respuesta = mimifica(update.message.reply_to_message.text)
     update.message.reply_to_message.reply_text(respuesta, quote = True)
 
