@@ -1,7 +1,7 @@
 """
 @file bot.py
 @author Jose
-@brief cuerpo del bot, desde aquí se llama a la función clase algorith que es al que "mimifica"
+@brief cuerpo del bot, desde aquí se llama a la función clase algorith que es el que "mimifica"
 """
 from algorithm import mimifica
 from config import TOKEN
